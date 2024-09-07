@@ -1,7 +1,9 @@
+import Header from "./components/partials/Header";
+
 const App = () => {
   return (
     <>
-      
+      <Header/>
     </>
   );
 }
