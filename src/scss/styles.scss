@@ -1,1 +1,24 @@
-@import "./../../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css";
+// breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+
+// bootstrap partials
+@import './../../node_modules/bootstrap/scss/functions';
+@import './../../node_modules/bootstrap/scss/variables';
+@import './../../node_modules/bootstrap/scss/mixins';
+@import './../../node_modules/bootstrap/scss/mixins/_breakpoints';
+
+// bootstrap icons and bootstrap rtl version
+@import './../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import './../../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css';
+
+// components and fonts
+@import './fonts/font.scss';
+@import './components/header';

@@ -1,0 +1,36 @@
+@include media-breakpoint-down(lg) {
+    .navbar-desktop {
+        display: none;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .navbar-mobile {
+        display: none;
+    }
+}
+
+
+.navbar-mobile {
+    .nav-item {
+        a {
+            :hover {
+                * {
+                    color: #8a7600 !important;
+                    transition: all 500ms linear;
+                }
+            }
+        }
+    }
+}
+
+.navbar-desktop {
+    .nav-item {
+        a {
+            :hover {
+                color: #8a7600 !important;
+                transition: all 500ms linear;
+            }
+        }
+    }
+}
