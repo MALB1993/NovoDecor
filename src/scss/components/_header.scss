@@ -2,6 +2,9 @@
     .navbar-desktop {
         display: none;
     }
+    header{
+        display: none;
+    }
 }
 
 @include media-breakpoint-up(lg) {
@@ -12,6 +15,8 @@
 
 
 .navbar-mobile {
+    border-top-left-radius: 53px;
+    border-top-right-radius: 53px;
     .nav-item {
         a {
             :hover {
@@ -37,8 +42,8 @@
         position: relative;
         button{
             position: absolute;
-            left: 4px;
-            top: 4px;
+            left: 17px;
+            top: 5px;
         }
     }
 }
