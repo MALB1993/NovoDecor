@@ -5,6 +5,8 @@ import '../scss/styles.scss'
 import 'bootstrap/dist/js/bootstrap.bundle';
 
 
+
+
 document.getElementById("search-window").addEventListener("click", () => {
 
     document.getElementById('navbar-brand').classList.add("d-none");
@@ -26,5 +28,6 @@ document.getElementById("arrow-right").addEventListener("click", () => {
     document.getElementById('search-box').classList.remove("d-block");
     document.getElementById('search-box').classList.remove("m-4");
     document.getElementById('search-box').classList.add("col-4");
+
     document.getElementById('search-box').classList.remove("col-12");
 });
