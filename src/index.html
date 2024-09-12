@@ -15,39 +15,38 @@
     <!-- navbar desktop -->
     <header class="shadow">
         <nav class="navbar navbar-expand-lg navbar-desktop">
-            <div class="container-fluid">
-                <a class="navbar-brand col-2" href="#">
-                    <img src="./img/logo.jpg" alt="" width="75" height="75">
+                <a id="navbar-brand" class="navbar-brand col-2" href="#">
+                    <img src="./img/logo.jpg" alt width="75" height="75">
                 </a>
-
-                <form action="/" method="post" class="search-box me-auto col-4" id="search-box">
-                    <input type="text" name="search" id="search" class="form-control" placeholder="جستجوی محصول">
-                    <button class="btn btn-sm" type="submit">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </form>
+                <div class="row">
+                    <div class="col-12">
+                        <form id="search-box" class="search-box me-auto col-12" action="/" method="post">
+                            <i id="arrow-right" class="bi bi-arrow-right fs-3 position-absolute" style="top: 4px; right: -10px;"></i>
+                            <input id="search" class="form-control" name="search" type="text" placeholder="جستجوی محصول">
+                            <button class="btn btn-sm" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
 
                 <div class="navigation-buttons">
-                    <a class="btn btn-md btn-outline-secondary" id="search-window">
+                    <a id="search-window" class="btn btn-md btn-outline-secondary">
                         <i class="bi bi-search fs-5"></i>
                     </a>
 
-                    <a href="#" class="btn btn-md btn-outline-light" id="shop-window">
-                        <i class="bi bi-shop-window fs-5 text-secondary"></i>
-                    </a>
-
-                    <a href="#" class="btn btn-md btn-outline-primary account-button">
+                    <a id="account-button" class="btn btn-md btn-outline-primary account-button" href="#">
                         <i class="bi bi-person fs-5"></i>
                         <span>حساب کاربری</span>
                     </a>
                 </div>
-            </div>
+            
         </nav>
         <hr class="border-secondary p-0 m-0">
         <nav class="navbar container p-0 nav-menu">
             <ul class="nav align-items-center">
                 <li class="nav-item">
-                    <a class="btn btn-md btn-outline-primary" aria-current="page" href="#">
+                    <a class="btn btn-md btn-outline-primary" href="#" aria-current="page">
                         <i class="bi bi-bricks fs-4"></i>
                         دسته بندی محصولات
                     </a>
@@ -73,7 +72,7 @@
             </ul>
             <ul class="nav">
                 <li class="nav-item">
-                    <a href="tel:09212516014" class="nav-link d-flex justify-content-center align-items-center">
+                    <a class="nav-link d-flex justify-content-center align-items-center" href="tel:09212516014">
                         <div class="text-center mx-2">
                             <p class="text-dark">پشتیبانی</p>
                             <p class="text-secondary">09212516014</p>
@@ -130,7 +129,7 @@
                 </li>
                 <!-- basket -->
                 <li class="nav-item">
-                    <a href="#" class="nav-link position-relative">
+                    <a class="nav-link position-relative" href="#">
                         <span class="badge badge-dark text-light position-absolute" style="bottom: -8px; left: 0;">12</span>
                         <i class="bi bi-shop-window fs-3"></i>
                     </a>
