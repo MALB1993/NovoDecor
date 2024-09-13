@@ -31,3 +31,25 @@ document.getElementById("arrow-right").addEventListener("click", () => {
 
     document.getElementById('search-box').classList.remove("col-12");
 });
+
+
+const menuBar = document.getElementById("menu-bars");
+const btnList = document.getElementById("btn-list");
+const buttonClose = document.getElementById("btn-close");
+
+// Check if elements exist
+if (menuBar && btnList && buttonClose) {
+    // Add the hidden class initially
+    menuBar.classList.add("d-none");
+
+    // Define the function to toggle menu visibility
+    const toggleMenu = () => {
+        menuBar.classList.toggle("d-none");
+    }
+
+    // Add click event listeners to the buttons
+    btnList.addEventListener("click", toggleMenu);
+    buttonClose.addEventListener("click", toggleMenu);
+} else {
+    console.error("One of the elements was not found.");
+}
