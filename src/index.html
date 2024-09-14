@@ -92,22 +92,49 @@
 
     <!-- main -->
     <main>
+        <div class="container-fluid my-2">
+            <div class="row">
+                <div class="col-3">
+                    <ul class="list-group shadow p-3">
+                        <form action="/" method="post">
+                            <li class="list-group-item">
+                                <label for="" class="form-label p-2 fw-bold">جستجو در نتایج</label>
+                                <input type="text" name="search" id="seach" class="form-control text-secondary"
+                                    placeholder="نام محصول را وارد کنید... .">
+                            </li>
+                            <li class="list-group-item">
 
+                                <div class="form-check form-switch">
+                                    <label class="form-check-label align-items-center my-2 fs-6"
+                                        for="flexSwitchCheckDefault">فقط کالاهای موجود</label>
+                                    <input class="form-check-input fs-4 my-2 mx-5" type="checkbox" role="switch"
+                                        id="flexSwitchCheckDefault">
+                                </div>
 
+                            </li>
+                        </form>
+                    </ul>
+                </div>
+                <div class="col-8"></div>
+            </div>
+        </div>
     </main>
     <!-- main -->
+
 
     <div id="menu-bars">
         <div class="container">
             <div class="row">
                 <div class="col-12 m-2 p-3">
                     <a class="navbar-brand fs-5" href>نوو دکور</a>
-                    <button class="btn btn-sm btn-light position-absolute" style="left: 10px; top: 10px;" id="btn-close">X</button>
+                    <button class="btn btn-sm btn-light position-absolute" style="left: 10px; top: 10px;"
+                        id="btn-close">X</button>
                     <hr>
                     <ul class="list-group">
                         <li class="list-group-item"><a href="" class="nav-link link-offset-1-hover">سرویس چوبی</a></li>
                         <li class="list-group-item"><a href="" class="nav-link link-offset-1-hover">سرویس خواب</a></li>
-                        <li class="list-group-item"><a href="" class="nav-link link-offset-1-hover">تزئینات داخلی</a></li>
+                        <li class="list-group-item"><a href="" class="nav-link link-offset-1-hover">تزئینات داخلی&:</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -166,6 +193,7 @@
         </div>
     </nav>
     <!-- navbar mobile -->
+
 </body>
 
 </html>
