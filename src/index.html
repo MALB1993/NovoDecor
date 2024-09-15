@@ -2,11 +2,11 @@
 <html lang="en" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NovoDecor</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <script src="./js/main.js" type="module"></script>
 </head>
 
@@ -16,14 +16,14 @@
     <header class="shadow">
         <nav class="navbar navbar-expand-lg navbar-desktop">
             <a id="navbar-brand" class="navbar-brand col-2" href="#">
-                <img src="./img/logo.jpg" alt width="75" height="75">
+                <img src="./img/logo.jpg" alt width="75" height="75" />
             </a>
             <div class="row">
                 <div class="col-12">
                     <form id="search-box" class="search-box me-auto col-12" action="/" method="post">
                         <i id="arrow-right" class="bi bi-arrow-right fs-3 position-absolute"
-                            style="top: 4px; right: -10px;"></i>
-                        <input id="search" class="form-control" name="search" type="text" placeholder="جستجوی محصول">
+                            style="top: 4px; right: -10px"></i>
+                        <input id="search" class="form-control" name="search" type="text" placeholder="جستجوی محصول" />
                         <button class="btn btn-sm" type="submit">
                             <i class="bi bi-search"></i>
                         </button>
@@ -37,14 +37,13 @@
                 </a>
 
                 <a id="account-button" class="btn btn-md btn-outline-primary account-button" href="#"
-                    style="margin: 0 10px;">
+                    style="margin: 0 10px">
                     <i class="bi bi-person fs-5"></i>
                     <span>حساب کاربری</span>
                 </a>
             </div>
-
         </nav>
-        <hr class="border-secondary p-0 m-0">
+        <hr class="border-secondary p-0 m-0" />
         <nav class="navbar container p-0 nav-menu">
             <ul class="nav align-items-center">
                 <li class="nav-item">
@@ -60,16 +59,14 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">تعمیرات</a>
+                    <a class="nav-link link-dark" href="#" data-bs-toggle="modal"
+                        data-bs-target="#repairModal">تعمیرات</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">گارانتی</a>
+                    <a class="nav-link link-dark" data-bs-toggle="modal" data-bs-target="#aboutUsModal">درباره ما</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark">درباره ما</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-dark">تماس باما</a>
+                    <a class="nav-link link-dark" data-bs-toggle="modal" data-bs-target="#contactUsModal">تماس باما</a>
                 </li>
             </ul>
             <ul class="nav">
@@ -86,6 +83,87 @@
                 </li>
             </ul>
         </nav>
+        <!-- repair -->
+        <div class="modal fade" id="repairModal" tabindex="-1" aria-labelledby="repairModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="repairModalLabel">تعمیرات</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                            در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                            نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                            کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                            جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                            برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
+                            زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+                            دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                            زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- about us -->
+        <div class="modal fade" id="aboutUsModal" tabindex="-1" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="aboutUsModalLabel">درباره ما</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                            در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                            نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                            کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                            جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                            برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
+                            زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+                            دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                            زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact us -->
+        <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="contactUsModalLabel">تماس باما</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                            در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                            نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                            کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                            جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                            برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
+                            زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+                            دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                            زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
     <!-- navbar desktop -->
     <!-- header -->
@@ -100,17 +178,15 @@
                             <li class="list-group-item">
                                 <label for="" class="form-label p-2 fw-bold">جستجو در نتایج</label>
                                 <input type="text" name="search" id="seach" class="form-control text-secondary"
-                                    placeholder="نام محصول را وارد کنید... .">
+                                    placeholder="نام محصول را وارد کنید... ." />
                             </li>
                             <li class="list-group-item">
-
                                 <div class="form-check form-switch">
                                     <label class="form-check-label align-items-center my-2 fs-6"
                                         for="flexSwitchCheckDefault">فقط کالاهای موجود</label>
                                     <input class="form-check-input fs-4 my-2 mx-5" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault">
+                                        id="flexSwitchCheckDefault" />
                                 </div>
-
                             </li>
                         </form>
                     </ul>
@@ -120,10 +196,12 @@
                         <div class="col-3 mb-3">
                             <div class="card card-hover">
                                 <div class="card-body">
-                                    <img src="./img/logo.jpg" class="card-img-top" alt="...">
-                                    <hr>
-                                    <h5 class="card-title fw-bold fs-6">لورم ایپسوم متن </h5>
-                                    <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                                    <img src="./img/logo.jpg" class="card-img-top" alt="..." />
+                                    <hr />
+                                    <h5 class="card-title fw-bold fs-6">لورم ایپسوم متن</h5>
+                                    <p class="card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                        و
                                     </p>
                                     <a href="#" class="btn btn-outline-dark">
                                         <i class="bi bi-eye-fill"></i>
@@ -134,10 +212,12 @@
                         <div class="col-3 mb-3">
                             <div class="card card-hover">
                                 <div class="card-body">
-                                    <img src="./img/logo.jpg" class="card-img-top" alt="...">
-                                    <hr>
-                                    <h5 class="card-title fw-bold fs-6">لورم ایپسوم متن </h5>
-                                    <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                                    <img src="./img/logo.jpg" class="card-img-top" alt="..." />
+                                    <hr />
+                                    <h5 class="card-title fw-bold fs-6">لورم ایپسوم متن</h5>
+                                    <p class="card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                        و
                                     </p>
                                     <a href="#" class="btn btn-outline-dark">
                                         <i class="bi bi-eye-fill"></i>
@@ -148,10 +228,12 @@
                         <div class="col-3 mb-3">
                             <div class="card card-hover">
                                 <div class="card-body">
-                                    <img src="./img/logo.jpg" class="card-img-top" alt="...">
-                                    <hr>
-                                    <h5 class="card-title fw-bold fs-6">لورم ایپسوم متن </h5>
-                                    <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                                    <img src="./img/logo.jpg" class="card-img-top" alt="..." />
+                                    <hr />
+                                    <h5 class="card-title fw-bold fs-6">لورم ایپسوم متن</h5>
+                                    <p class="card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                        و
                                     </p>
                                     <a href="#" class="btn btn-outline-dark">
                                         <i class="bi bi-eye-fill"></i>
@@ -162,10 +244,12 @@
                         <div class="col-3 mb-3">
                             <div class="card card-hover">
                                 <div class="card-body">
-                                    <img src="./img/logo.jpg" class="card-img-top" alt="...">
-                                    <hr>
-                                    <h5 class="card-title fw-bold fs-6">لورم ایپسوم متن </h5>
-                                    <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                                    <img src="./img/logo.jpg" class="card-img-top" alt="..." />
+                                    <hr />
+                                    <h5 class="card-title fw-bold fs-6">لورم ایپسوم متن</h5>
+                                    <p class="card-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                        و
                                     </p>
                                     <a href="#" class="btn btn-outline-dark">
                                         <i class="bi bi-eye-fill"></i>
@@ -175,25 +259,29 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
     <!-- main -->
-
 
     <div id="menu-bars">
         <div class="container">
             <div class="row">
                 <div class="col-12 m-2 p-3">
                     <a class="navbar-brand fs-5" href>نوو دکور</a>
-                    <button class="btn btn-sm btn-light position-absolute" style="left: 10px; top: 10px;"
-                        id="btn-close">X</button>
-                    <hr>
+                    <button class="btn btn-sm btn-light position-absolute" style="left: 10px; top: 10px" id="btn-close">
+                        X
+                    </button>
+                    <hr />
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="" class="nav-link link-offset-1-hover">سرویس چوبی</a></li>
-                        <li class="list-group-item"><a href="" class="nav-link link-offset-1-hover">سرویس خواب</a></li>
-                        <li class="list-group-item"><a href="" class="nav-link link-offset-1-hover">تزئینات داخلی&:</a>
+                        <li class="list-group-item">
+                            <a href="" class="nav-link link-offset-1-hover">سرویس چوبی</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="" class="nav-link link-offset-1-hover">سرویس خواب</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="" class="nav-link link-offset-1-hover">تزئینات داخلی&:</a>
                         </li>
                     </ul>
                 </div>
@@ -203,10 +291,8 @@
 
     <!-- navbar mobile -->
     <nav class="navbar bg-body-tertiary shadow-lg text-center navbar-mobile">
-
         <div class="container-fluid d-flex justify-content-center">
             <ul class="list-unstyled mb-2 mb-lg-0 d-flex justify-content-between align-items-center">
-
                 <!-- Home -->
                 <li class="nav-item btn-collapse">
                     <button id="btn-list" class="btn btn-sm">
@@ -245,7 +331,7 @@
                 <li class="nav-item">
                     <a class="nav-link position-relative" href="#">
                         <span class="badge badge-dark text-light position-absolute"
-                            style="bottom: -8px; left: 0;">12</span>
+                            style="bottom: -8px; left: 0">12</span>
                         <i class="bi bi-shop-window fs-3"></i>
                     </a>
                 </li>
@@ -253,7 +339,6 @@
         </div>
     </nav>
     <!-- navbar mobile -->
-
 </body>
 
 </html>
