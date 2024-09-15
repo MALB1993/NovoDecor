@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 
 
 
+
 document.getElementById("search-window").addEventListener("click", () => {
 
     document.getElementById('navbar-brand').classList.add("d-none");
