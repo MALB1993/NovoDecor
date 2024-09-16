@@ -1,4 +1,6 @@
 {
+    "name": "NovoDecor",
+    "version": "1.0.0",
     "private": true,
     "type": "module",
     "scripts": {
@@ -7,7 +9,13 @@
     },
     "devDependencies": {
         "axios": "^1.7.4",
+        "sass": "^1.78.0",
         "laravel-vite-plugin": "^1.0",
         "vite": "^5.0"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.3",
+        "bootstrap-icons": "^1.11.3"
     }
 }
